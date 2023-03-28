@@ -1,0 +1,43 @@
+git config --global user.name "Seu Nome"
+git config --global user.email "seu-email@example.com"
+
+git config --list
+
+Dentro da pasta, clique com o botão direito e git bash here.
+Dando um git init, estamos criando um repositório local.
+
+git status (vai mostrar a situação dos nossos arquivos).
+
+Usaremos o git add . (para incluir os arquivos na pasta do repositório local). 
+
+git status novamente. Vai mostrar todas as modificações que fizemos. Os arquivos estão na staging area.
+
+Agora, usaremos git commit -m "escreva aqui uma descricao das modificacoes"
+
+Crie o repositório remoto, dê um nome qualquer. Você pode adicionar um readme.
+
+Nosso repositório local e remoto NÃO se conhecem.
+OBS.: o gitlab não aceita ctrl V. Copie e cole o comando git remote add origin https://github.com...
+
+git push -u origin main (ou master, dependendo do nome da branch principal).
+
+Se houver algum problema no push: o comando git push link.git master -f pode resolver.
+
+O que é branch? Para que servem os commits?
+
+Quando você desenvolve software, você sai dando commits e pushs. Cada push tem suas características.
+Se você quiser desenvolver algo separado, você pode fazer uma branch (uma ramificação). Você pega o seu último commit e faz uma cópia. 
+Os commits serão feitos na branch.
+Se está tudo ok, você vai fazer um merge. Isto é, pegar todas as modificações da branch e colocar no ciclo de desenvolvimento.
+
+Se vc for fazer um commit novo, a partir de algo que já existe, basta usar um git add. em diante. Se tiver deletado arquivo do seu PC, basta usar um git clone.
+
+
+cd /caminho/para/o/diretorio/do/projeto
+git init
+git status
+git add .
+git commit -m "Mensagem de commit"
+git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+git push -u origin master
+
