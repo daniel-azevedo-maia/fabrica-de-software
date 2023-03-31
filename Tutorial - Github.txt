@@ -43,6 +43,8 @@ git commit -m "Mensagem de commit"
 git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
 git push -u origin master
 
+OBS.: É possível usar apenas git push
+
 Se a pasta estiver sendo postada no github ficando inacessível, use:
 
 git rm --cached 'pasta com submodule'
