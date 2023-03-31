@@ -47,4 +47,21 @@ Se a pasta estiver sendo postada no github ficando inacessível, use:
 
 git rm --cached 'pasta com submodule'
 
+Criando uma nova branch
+
+
+git checkout -b nome_da_nova_branch ( vai aparecer o nome da branch entre parênteses (nomeDaBranch ) )
+git status
+git add .
+git commit -m "Mensagem do commit na Branch"
+git push origin nome_da_nova_branch
+Para juntar (ou mesclar) uma branch com a branch principal (geralmente chamada de "master" ou "main"), siga os seguintes passos:
+
+Mude para a branch principal: git checkout master
+Atualize a branch principal com as alterações do repositório remoto: git pull
+git merge nome_da_nova_branch
+Após mesclar, envie as alterações para o repositório remoto:
+git push origin master
+
+
 
