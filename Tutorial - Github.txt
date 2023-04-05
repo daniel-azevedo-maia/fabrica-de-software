@@ -65,5 +65,10 @@ git merge nome_da_nova_branch
 Após mesclar, envie as alterações para o repositório remoto:
 git push origin master
 
+Commit de uma branch específica:
 
+git clone -b <branch> --single-branch <repositorio>
+Aqui você deve substituir o <branch> pelo branch que você deseja clonar
+
+E por fim <repositorio> pela URL do seu repositório
 
